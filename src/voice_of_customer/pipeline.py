@@ -19,7 +19,7 @@ from sklearn.naive_bayes import MultinomialNB
 from sklearn.pipeline import FeatureUnion, Pipeline
 from sklearn.preprocessing import Normalizer
 
-from bayan.text import mask_pii, normalize
+from voice_of_customer.text import mask_pii, normalize
 
 ROOT = Path(__file__).resolve().parents[2]
 MODEL_PATH = ROOT / "artifacts/model.pkl"

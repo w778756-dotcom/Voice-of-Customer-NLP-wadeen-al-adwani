@@ -105,7 +105,7 @@ Paid API cost per 1,000 comments: **USD 0** (no API calls). Compute, hosting, el
 Reproduce via `bash scripts/run_all.sh`. Environment setup download time is not inference latency. Do not compare these CPU measurements to unmeasured GPU/transformer models.
 ''')
     write('README.md', f'''
-# بيان | Voice of Customer Analyzer
+# Voice of Customer Analyzer
 
 **المتدربة:** Wadeen Khalid Al adwani
 
@@ -123,7 +123,7 @@ bash scripts/run_all.sh
 UV_CACHE_DIR=/workspace/.cache/uv uv run --frozen python app.py
 ```
 
-Python 3.12 وuv. لا يحتاج مفتاح API أو GPU. الخطوات الكاملة وColab في [GETTING_STARTED.md](GETTING_STARTED.md). الدفتر الرئيس: [bayan_NLP_Wadeen_Khalid_Al_adwani.ipynb](bayan_NLP_Wadeen_Khalid_Al_adwani.ipynb).
+Python 3.12 وuv. لا يحتاج مفتاح API أو GPU. الخطوات الكاملة وColab في [GETTING_STARTED.md](GETTING_STARTED.md). الدفتر الرئيس: [Voice_of_Customer_NLP_Wadeen_Khalid_Al_adwani.ipynb](Voice_of_Customer_NLP_Wadeen_Khalid_Al_adwani.ipynb).
 
 ## البيانات
 
@@ -166,7 +166,7 @@ notebooks/             exploration notebook
 reports/               predictions, slices, errors, metrics, plots, smoke evidence
 sample_outputs/        demo CSV + JSON outputs
 scripts/               train, evaluate, run_all, smoke_test, build_docs
-src/bayan/             text preprocessing + end-to-end pipeline
+src/voice_of_customer/             text preprocessing + end-to-end pipeline
 tests/                 split, privacy, input and measured-result checks
 configs/final.json     model hyperparameters
 app.py                 Gradio Arabic demo
@@ -174,7 +174,7 @@ BENCHMARKS.md          DATA_CARD.md       DECISIONS.md
 EVALUATION_REPORT.md   GETTING_STARTED.md MODEL_CARD.md
 PRESENTATION.md        PROGRESS.md        PROJECT_SUMMARY.json
 README.md             STUDENT_PROFILE.md SUBMISSION.yml
-bayan_NLP_Wadeen_Khalid_Al_adwani.ipynb
+Voice_of_Customer_NLP_Wadeen_Khalid_Al_adwani.ipynb
 requirements-day1.txt  pyproject.toml     uv.lock
 ```
 
@@ -182,7 +182,7 @@ requirements-day1.txt  pyproject.toml     uv.lock
 
 | Requirement | Evidence |
 | --- | --- |
-| End-to-end pipeline + demo | `src/bayan/pipeline.py`, `app.py`, `reports/demo_smoke.json` |
+| End-to-end pipeline + demo | `src/voice_of_customer/pipeline.py`, `app.py`, `reports/demo_smoke.json` |
 | Representation + decision/generation | SVD embeddings + sentiment classifier + traceable count summaries |
 | Baseline and improvement, same held-out test | `reports/predictions.csv`, `reports/metrics.json` |
 | Fine-tuning OR evidence-based justification | `DECISIONS.md`, `reports/learning_curve.csv` |
@@ -197,7 +197,7 @@ requirements-day1.txt  pyproject.toml     uv.lock
 
 ترخيص MIT للكود والأمثلة الأصلية. المصادر والقيود ومساهمة المساعد معلنة.
 ''')
-    summary = {'project_number': 3, 'project': 'Bayan Voice of Customer Analyzer', 'student': 'Wadeen Khalid Al adwani',
+    summary = {'project_number': 3, 'project': 'Voice of Customer Analyzer', 'student': 'Wadeen Khalid Al adwani',
                'instructor': 'مضر محمد الفضلي', 'academy': 'SDAIA Academy', 'team': 'individual, student-confirmed instructor permission',
                'dataset': {'source': 'authored synthetic v1', 'total': 198, 'train': 102, 'validation': 30, 'test': 66, 'sha256': training['data_sha256']},
                'test_metrics': {'baseline_macro_f1': metrics['baseline']['macro_f1'], 'improved_macro_f1': metrics['improved']['macro_f1'], 'actual_errors': len(errors)},
@@ -206,7 +206,7 @@ requirements-day1.txt  pyproject.toml     uv.lock
                'production_ready': False, 'submitted_to_instructor': False, 'api_required': False}
     write('PROJECT_SUMMARY.json', json.dumps(summary, ensure_ascii=False, indent=2))
     presentation = f'''
-# ١ — بيان: تحليل صوت العميل
+# ١ — Voice of Customer: تحليل صوت العميل
 
 **Wadeen Khalid Al adwani**
 
@@ -304,7 +304,7 @@ requirements-day1.txt  pyproject.toml     uv.lock
     write('PRESENTATION.md', presentation)
     slides = presentation.strip().split('\n---\n')
     content = '\n'.join(f'<section class="slide">{MarkdownIt().render(slide)}</section>' for slide in slides)
-    html = '''<!doctype html><html lang="ar" dir="rtl"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>بيان — Wadeen</title><style>
+    html = '''<!doctype html><html lang="ar" dir="rtl"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Voice of Customer — Wadeen</title><style>
 body{margin:0;background:#0b1729;color:#f4f7fc;font-family:Tahoma,Arial,sans-serif} .slide{display:none;box-sizing:border-box;min-height:90vh;padding:4vw 7vw;font-size:clamp(16px,2vw,25px);line-height:1.8}.slide.active{display:block}h1{color:#67e8d0;font-size:1.6em}strong{color:#fde68a}table{border-collapse:collapse;font-size:.7em;direction:ltr}th,td{padding:.4em;border:1px solid #53617b}code{direction:ltr;display:inline-block;background:#203047;padding:.1em .4em;border-radius:5px}nav{padding:10px 7vw;display:flex;gap:20px;align-items:center}button{background:#67e8d0;border:0;padding:10px 20px;border-radius:6px;cursor:pointer;font-size:16px}@media print{.slide{display:block;page-break-after:always;background:white;color:black;min-height:auto}nav{display:none}strong,h1{color:black}}
 </style><body>''' + content + '''<nav><button id="prev">السابق</button><span id="counter"></span><button id="next">التالي</button></nav><script>
 const slides=[...document.querySelectorAll('.slide')];let current=0;function show(){slides.forEach((s,i)=>s.classList.toggle('active',i===current));document.querySelector('#counter').textContent=`${current+1} / ${slides.length}`;}function move(n){current=Math.max(0,Math.min(slides.length-1,current+n));show();}document.querySelector('#prev').onclick=()=>move(-1);document.querySelector('#next').onclick=()=>move(1);document.onkeydown=e=>{if(e.key==='ArrowLeft'||e.key==='PageDown')move(1);if(e.key==='ArrowRight'||e.key==='PageUp')move(-1)};show();

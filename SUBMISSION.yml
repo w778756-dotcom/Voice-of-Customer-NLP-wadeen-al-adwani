@@ -1,5 +1,5 @@
 project_number: 3
-project_name: "Bayan — Voice of Customer Analyzer"
+project_name: "Voice of Customer Analyzer"
 academy: "SDAIA Academy"
 course_url: "https://sdaiaacademy.github.io/applied-nlp/"
 repository_url: "https://github.com/w778756-dotcom/Voice-of-Customer-NLP-wadeen-al-adwani"
@@ -10,7 +10,7 @@ data_type: "Original authored synthetic educational examples, not actual custome
 fine_tuning_path: "Written evidence-based justification; see DECISIONS.md"
 demo_command: "uv run --frozen python app.py"
 reproduce_command: "bash scripts/run_all.sh"
-notebook: "bayan_NLP_Wadeen_Khalid_Al_adwani.ipynb"
+notebook: "Voice_of_Customer_NLP_Wadeen_Khalid_Al_adwani.ipynb"
 evaluation_report: "EVALUATION_REPORT.md"
 presentation: "PRESENTATION.md"
 assistance: "AI coding assistance disclosed in STUDENT_PROFILE.md"

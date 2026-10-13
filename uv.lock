@@ -70,7 +70,7 @@ wheels = [
 ]
 
 [[package]]
-name = "bayan-voice-of-customer"
+name = "voice-of-customer-nlp"
 version = "1.0.0"
 source = { editable = "." }
 dependencies = [

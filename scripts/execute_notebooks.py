@@ -6,11 +6,11 @@ import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-JUPYTER_DATA = Path('/tmp/bayan-jupyter-data')
+JUPYTER_DATA = Path('/tmp/voice_of_customer-jupyter-data')
 os.environ['JUPYTER_DATA_DIR'] = str(JUPYTER_DATA)
-os.environ['JUPYTER_RUNTIME_DIR'] = '/tmp/bayan-jupyter-runtime'
-os.environ['IPYTHONDIR'] = '/tmp/bayan-ipython'
-os.environ.setdefault('MPLCONFIGDIR', '/tmp/bayan-matplotlib')
+os.environ['JUPYTER_RUNTIME_DIR'] = '/tmp/voice_of_customer-jupyter-runtime'
+os.environ['IPYTHONDIR'] = '/tmp/voice_of_customer-ipython'
+os.environ.setdefault('MPLCONFIGDIR', '/tmp/voice_of_customer-matplotlib')
 os.environ.setdefault('XDG_CACHE_HOME', '/workspace/.cache')
 
 import nbformat
@@ -18,14 +18,14 @@ from nbclient import NotebookClient
 
 
 def main():
-    kernel = JUPYTER_DATA / 'kernels' / 'bayan-local'
+    kernel = JUPYTER_DATA / 'kernels' / 'voice_of_customer-local'
     kernel.mkdir(parents=True, exist_ok=True)
     (kernel / 'kernel.json').write_text(json.dumps({'argv': [sys.executable, '-m', 'ipykernel_launcher', '-f', '{connection_file}'],
-                                                  'display_name': 'Bayan local validation', 'language': 'python'}))
+                                                  'display_name': 'Voice of Customer local validation', 'language': 'python'}))
     results = []
-    for name in ['bayan_NLP_Wadeen_Khalid_Al_adwani.ipynb', 'notebooks/01_exploration.ipynb']:
+    for name in ['Voice_of_Customer_NLP_Wadeen_Khalid_Al_adwani.ipynb', 'notebooks/01_exploration.ipynb']:
         notebook = nbformat.read(ROOT / name, as_version=4)
-        NotebookClient(notebook, timeout=180, kernel_name='bayan-local', resources={'metadata': {'path': str(ROOT)}}).execute()
+        NotebookClient(notebook, timeout=180, kernel_name='voice_of_customer-local', resources={'metadata': {'path': str(ROOT)}}).execute()
         nbformat.write(notebook, ROOT / name)
         count = sum(cell.cell_type == 'code' for cell in notebook.cells)
         assert all(cell.execution_count is not None for cell in notebook.cells if cell.cell_type == 'code')

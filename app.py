@@ -5,11 +5,11 @@ from pathlib import Path
 
 os.environ.setdefault('GRADIO_ANALYTICS_ENABLED', 'False')
 os.environ.setdefault('OMP_NUM_THREADS', '2')
-os.environ.setdefault('MPLCONFIGDIR', '/tmp/bayan-matplotlib')
+os.environ.setdefault('MPLCONFIGDIR', '/tmp/voice_of_customer-matplotlib')
 
 import gradio as gr
 import pandas as pd
-from bayan.pipeline import load_analyzer
+from voice_of_customer.pipeline import load_analyzer
 
 
 def analyze_text(comments):
@@ -35,8 +35,8 @@ def analyze_csv(file):
 
 
 def build_demo():
-    with gr.Blocks(title='بيان | صوت العميل', theme=gr.themes.Soft()) as demo:
-        gr.Markdown('# بيان — تحليل صوت العميل\n**Wadeen Khalid Al adwani** · أكاديمية سدايا · المشروع ٣\n\n'
+    with gr.Blocks(title='Voice of Customer | صوت العميل', theme=gr.themes.Soft()) as demo:
+        gr.Markdown('# Voice of Customer — تحليل صوت العميل\n**Wadeen Khalid Al adwani** · أكاديمية سدايا · المشروع ٣\n\n'
                     'المدرب: **مضر محمد الفضلي**\n\n'
                     'نموذج تعليمي على بيانات مؤلفة: النتائج ليست ضمانًا للأداء على عملاء حقيقيين. '
                     'كل التحليل محلي؛ إخفاء البريد والهاتف آلي وجزئي، لذا لا ترفعي بيانات شخصية.')

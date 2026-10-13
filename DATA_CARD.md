@@ -1,4 +1,4 @@
-# Data card — Bayan Voice of Customer
+# Data card — Voice of Customer
 
 ## Provenance and permission
 

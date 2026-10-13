@@ -1,4 +1,5 @@
 {
+  "project_name": "Voice of Customer",
   "seed": 42,
   "word_ngram_range": [1, 2],
   "char_ngram_range": [3, 5],

@@ -1,4 +1,4 @@
-# Measured artifacts
+# Voice of Customer — Measured artifacts
 
 - `training.json`: train/validation sizes, C selection, seed, data SHA and SVD variance.
 - `predictions.csv`: every fixed test row and both model predictions, confidence/review flag.

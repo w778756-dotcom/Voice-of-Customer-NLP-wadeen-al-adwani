@@ -11,7 +11,7 @@ jobs:
     env:
       UV_CACHE_DIR: ${{ github.workspace }}/.cache/uv
       XDG_CACHE_HOME: ${{ github.workspace }}/.cache
-      MPLCONFIGDIR: /tmp/bayan-matplotlib
+      MPLCONFIGDIR: /tmp/voice_of_customer-matplotlib
       GRADIO_ANALYTICS_ENABLED: 'False'
     steps:
       - uses: actions/checkout@v4

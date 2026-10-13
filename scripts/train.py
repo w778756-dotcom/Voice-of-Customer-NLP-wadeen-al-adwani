@@ -13,8 +13,8 @@ sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
 import pandas as pd
 from sklearn.metrics import f1_score
 
-from bayan.pipeline import Analyzer, ROOT, fit_embeddings, make_baseline, make_improved
-from bayan.text import normalize
+from voice_of_customer.pipeline import Analyzer, ROOT, fit_embeddings, make_baseline, make_improved
+from voice_of_customer.text import normalize
 
 
 def main():

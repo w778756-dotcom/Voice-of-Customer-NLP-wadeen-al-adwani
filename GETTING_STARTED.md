@@ -20,7 +20,7 @@ Paste one comment per line, click **تحليل التعليقات**, then inspec
 
 ## Notebook / Colab
 
-Open `bayan_NLP_Wadeen_Khalid_Al_adwani.ipynb` or `notebooks/01_exploration.ipynb`. On Colab use a Python 3.12 runtime and run:
+Open `Voice_of_Customer_NLP_Wadeen_Khalid_Al_adwani.ipynb` or `notebooks/01_exploration.ipynb`. On Colab use a Python 3.12 runtime and run:
 
 ```python
 !git clone https://github.com/w778756-dotcom/Voice-of-Customer-NLP-wadeen-al-adwani.git

@@ -10,7 +10,7 @@ from collections import Counter
 from pathlib import Path
 
 os.environ.setdefault("OMP_NUM_THREADS", "2")
-os.environ.setdefault("MPLCONFIGDIR", "/tmp/bayan-matplotlib")
+os.environ.setdefault("MPLCONFIGDIR", "/tmp/voice_of_customer-matplotlib")
 os.environ.setdefault("XDG_CACHE_HOME", "/workspace/.cache")
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
 import matplotlib
@@ -21,7 +21,7 @@ import pandas as pd
 from sklearn.metrics import accuracy_score, confusion_matrix, f1_score, silhouette_score
 from sklearn.model_selection import train_test_split
 
-from bayan.pipeline import LABELS, ROOT, load_analyzer, make_improved
+from voice_of_customer.pipeline import LABELS, ROOT, load_analyzer, make_improved
 
 
 def macro(y, p):

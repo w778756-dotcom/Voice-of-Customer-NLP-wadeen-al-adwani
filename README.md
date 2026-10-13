@@ -1,4 +1,4 @@
-# بيان | Voice of Customer Analyzer
+# Voice of Customer Analyzer
 
 **المتدربة:** Wadeen Khalid Al adwani
 
@@ -16,7 +16,7 @@ bash scripts/run_all.sh
 UV_CACHE_DIR=/workspace/.cache/uv uv run --frozen python app.py
 ```
 
-Python 3.12 وuv. لا يحتاج مفتاح API أو GPU. الخطوات الكاملة وColab في [GETTING_STARTED.md](GETTING_STARTED.md). الدفتر الرئيس: [bayan_NLP_Wadeen_Khalid_Al_adwani.ipynb](bayan_NLP_Wadeen_Khalid_Al_adwani.ipynb).
+Python 3.12 وuv. لا يحتاج مفتاح API أو GPU. الخطوات الكاملة وColab في [GETTING_STARTED.md](GETTING_STARTED.md). الدفتر الرئيس: [Voice_of_Customer_NLP_Wadeen_Khalid_Al_adwani.ipynb](Voice_of_Customer_NLP_Wadeen_Khalid_Al_adwani.ipynb).
 
 ## البيانات
 
@@ -47,8 +47,8 @@ Baseline: unigram TF-IDF + Naive Bayes. Improvement: word bigrams + character n-
 
 | System | Test N | Accuracy | Macro-F1 | 95% bootstrap CI | p95 single-comment ms |
 | --- | --- | --- | --- | --- | --- |
-| baseline | 66 | 0.530 | 0.533 | [0.402, 0.656] | 0.69 |
-| improved | 66 | 0.576 | 0.575 | [0.440, 0.705] | 1.45 |
+| baseline | 66 | 0.530 | 0.533 | [0.402, 0.656] | 3.51 |
+| improved | 66 | 0.576 | 0.575 | [0.440, 0.705] | 2.81 |
 
 التحسن 0.042 Macro-F1، لكن فاصل الثقة للفرق يشمل الصفر. وثقنا **28 خطأ فعليًا مصنفًا**، وتقييمًا حسب اللغة واللهجة والظواهر. عند عتبة الثقة 0.55، جميع أمثلة الاختبار تحتاج مراجعة بشرية. تكلفة API صفر ولا تشمل الاستضافة. [التقييم الكامل](EVALUATION_REPORT.md) · [القياسات](BENCHMARKS.md).
 
@@ -62,7 +62,7 @@ notebooks/             exploration notebook
 reports/               predictions, slices, errors, metrics, plots, smoke evidence
 sample_outputs/        demo CSV + JSON outputs
 scripts/               train, evaluate, run_all, smoke_test, build_docs
-src/bayan/             text preprocessing + end-to-end pipeline
+src/voice_of_customer/             text preprocessing + end-to-end pipeline
 tests/                 split, privacy, input and measured-result checks
 configs/final.json     model hyperparameters
 app.py                 Gradio Arabic demo
@@ -70,7 +70,7 @@ BENCHMARKS.md          DATA_CARD.md       DECISIONS.md
 EVALUATION_REPORT.md   GETTING_STARTED.md MODEL_CARD.md
 PRESENTATION.md        PROGRESS.md        PROJECT_SUMMARY.json
 README.md             STUDENT_PROFILE.md SUBMISSION.yml
-bayan_NLP_Wadeen_Khalid_Al_adwani.ipynb
+Voice_of_Customer_NLP_Wadeen_Khalid_Al_adwani.ipynb
 requirements-day1.txt  pyproject.toml     uv.lock
 ```
 
@@ -78,7 +78,7 @@ requirements-day1.txt  pyproject.toml     uv.lock
 
 | Requirement | Evidence |
 | --- | --- |
-| End-to-end pipeline + demo | `src/bayan/pipeline.py`, `app.py`, `reports/demo_smoke.json` |
+| End-to-end pipeline + demo | `src/voice_of_customer/pipeline.py`, `app.py`, `reports/demo_smoke.json` |
 | Representation + decision/generation | SVD embeddings + sentiment classifier + traceable count summaries |
 | Baseline and improvement, same held-out test | `reports/predictions.csv`, `reports/metrics.json` |
 | Fine-tuning OR evidence-based justification | `DECISIONS.md`, `reports/learning_curve.csv` |

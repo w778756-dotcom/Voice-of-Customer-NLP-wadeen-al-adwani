@@ -6,8 +6,8 @@ import pandas as pd
 import pytest
 from sklearn.metrics import f1_score
 
-from bayan.pipeline import LABELS, ROOT, load_analyzer
-from bayan.text import mask_pii, normalize
+from voice_of_customer.pipeline import LABELS, ROOT, load_analyzer
+from voice_of_customer.text import mask_pii, normalize
 
 
 def test_dataset_split_integrity_and_label_balance():

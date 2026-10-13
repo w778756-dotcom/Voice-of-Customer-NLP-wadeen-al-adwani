@@ -1,5 +1,5 @@
 [project]
-name = "bayan-voice-of-customer"
+name = "voice-of-customer-nlp"
 version = "1.0.0"
 description = "Arabic Voice of Customer capstone — SDAIA Academy, project 3"
 requires-python = ">=3.12,<3.13"

@@ -158,7 +158,7 @@ fsspec==2026.9.0 \
 gradio==5.49.1 \
     --hash=sha256:1b19369387801a26a6ba7fd2f74d46c5b0e2ac9ddef14f24ddc0d11fb19421b7 \
     --hash=sha256:c06faa324ae06c3892c8b4b4e73c706c4520d380f6b9e52a3c02dc53a7627ba9
-    # via bayan-voice-of-customer
+    # via voice-of-customer-nlp
 gradio-client==1.13.3 \
     --hash=sha256:3f63e4d33a2899c1a12b10fe3cf77b82a6919ff1a1fb6391f6aa225811aa390c \
     --hash=sha256:869b3e67e0f7a0f40df8c48c94de99183265cf4b7b1d9bd4623e336d219ffbe7
@@ -215,7 +215,7 @@ iniconfig==2.3.1 \
 ipykernel==6.30.1 \
     --hash=sha256:6abb270161896402e76b91394fcdce5d1be5d45f456671e5080572f8505be39b \
     --hash=sha256:aa6b9fb93dca949069d8b85b6c79b2518e32ac583ae9c7d37c51d119e18b3fb4
-    # via bayan-voice-of-customer
+    # via voice-of-customer-nlp
 ipython==9.17.1 \
     --hash=sha256:6d1645743cfd1a07eb695d85aa2b5fa66721f8cbae9431d4049f7084bbf06509 \
     --hash=sha256:8919be8c27f20a6f4423145028063f6637b42a03ce57665bb12015ee1f073529
@@ -312,7 +312,7 @@ matplotlib==3.10.7 \
     --hash=sha256:a06ba7e2a2ef9131c79c49e63dad355d2d878413a0376c1727c8b9335ff731c7 \
     --hash=sha256:c380371d3c23e0eadf8ebff114445b9f970aff2010198d498d4ab4c3b41eea4f \
     --hash=sha256:d5f256d49fea31f40f166a5e3131235a5d2f4b7f44520b1cf0baf1ce568ccff0
-    # via bayan-voice-of-customer
+    # via voice-of-customer-nlp
 matplotlib-inline==0.2.2 \
     --hash=sha256:3c821cf1c209f59fb2d2d64abbf5b23b67bcb2210d663f9918dd851c6da1fcf6 \
     --hash=sha256:72f3fe8fce36b70d4a5b612f899090cd0401deddc4ea90e1572b9f4bfb058c79
@@ -326,12 +326,12 @@ mdurl==0.1.2 \
 nbclient==0.10.2 \
     --hash=sha256:4ffee11e788b4a27fabeb7955547e4318a5298f34342a4bfd01f2e1faaeadc3d \
     --hash=sha256:90b7fc6b810630db87a6d0c2250b1f0ab4cf4d3c27a299b0cde78a4ed3fd9193
-    # via bayan-voice-of-customer
+    # via voice-of-customer-nlp
 nbformat==5.10.4 \
     --hash=sha256:322168b14f937a5d11362988ecac2a4952d3d8e3a2cbeb2319584631226d5b3a \
     --hash=sha256:3b48d6c8fbca4b299bf3982ea7db1af21580e4fec269ad087b9e81588891200b
     # via
-    #   bayan-voice-of-customer
+    #   voice-of-customer-nlp
     #   nbclient
 nest-asyncio==1.6.0 \
     --hash=sha256:6f172d5449aca15afd6c646851f4e31e02c598d553a667e38cafa997cfec55fe \
@@ -350,7 +350,7 @@ numpy==2.2.6 \
     --hash=sha256:fd83c01228a688733f1ded5201c678f0c53ecc1006ffbc404db9f7a899ac6249 \
     --hash=sha256:fe27749d33bb772c80dcd84ae7e8df2adc920ae8297400dabec45f0dedb3f6de
     # via
-    #   bayan-voice-of-customer
+    #   voice-of-customer-nlp
     #   contourpy
     #   gradio
     #   matplotlib
@@ -394,7 +394,7 @@ pandas==2.2.3 \
     --hash=sha256:b1d432e8d08679a40e2a6d8b2f9770a5c21793a6f9f47fdd52c5ce1948a5a8a9 \
     --hash=sha256:fffb8ae78d8af97f849404f21411c95062db1496aeb3e56f146f0355c9989319
     # via
-    #   bayan-voice-of-customer
+    #   voice-of-customer-nlp
     #   gradio
 parso==0.8.7 \
     --hash=sha256:a8926eb2a1b915486941fdbd31e86a4baf88fe8c210f25f2f35ecec5b574ca1c \
@@ -499,7 +499,7 @@ pyparsing==3.3.3 \
 pytest==8.4.2 \
     --hash=sha256:86c0d0b93306b961d58d62a4db4879f27fe25513d4b969df351abdddb3c30e01 \
     --hash=sha256:872f880de3fc3a5bdc88a11b39c9710c3497a547cfa9320bc3c5e62fbf272e79
-    # via bayan-voice-of-customer
+    # via voice-of-customer-nlp
 python-dateutil==2.9.0.post0 \
     --hash=sha256:37dd54208da7e1cd875388217d5e00ebd4179249f90fb72437e91a35459a0ad3 \
     --hash=sha256:a8b2bc7bffae282281c8140a97d3aa9c14da0b136dfe83f850eea9a5f7470427
@@ -619,7 +619,7 @@ scikit-learn==1.6.1 \
     --hash=sha256:70b1d7e85b1c96383f872a519b3375f92f14731e279a7b4c6cfd650cf5dffc52 \
     --hash=sha256:926f207c804104677af4857b2c609940b743d04c4c35ce0ddc8ff4f053cddc1b \
     --hash=sha256:b4fc2525eca2c69a59260f583c56a7557c6ccdf8deafdba6e060f94c1c59738e
-    # via bayan-voice-of-customer
+    # via voice-of-customer-nlp
 scipy==1.15.3 \
     --hash=sha256:05dc6abcd105e1a29f95eada46d4a3f251743cfd7d3ae8ddb4088047f24ea477 \
     --hash=sha256:06efcba926324df1696931a57a176c80848ccd67ce6ad020c810736bfd58eb1c \
@@ -632,7 +632,7 @@ scipy==1.15.3 \
     --hash=sha256:c05045d8b9bfd807ee1b9f38761993297b10b245f012b11b13b91ba8945f7e45 \
     --hash=sha256:eae3cf522bc7df64b42cad3925c876e1b0b6c35c1337c93e12c0f366f55b0eaf
     # via
-    #   bayan-voice-of-customer
+    #   voice-of-customer-nlp
     #   scikit-learn
 semantic-version==2.10.0 \
     --hash=sha256:bdabb6d336998cbb378d4b9db3a4b56a1e3235701dc05ea2690d9a997ed5041c \

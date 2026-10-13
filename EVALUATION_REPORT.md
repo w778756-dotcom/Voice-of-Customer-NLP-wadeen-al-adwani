@@ -8,8 +8,8 @@
 
 | System | Test N | Accuracy | Macro-F1 | 95% bootstrap CI | p95 single-comment ms |
 | --- | --- | --- | --- | --- | --- |
-| baseline | 66 | 0.530 | 0.533 | [0.402, 0.656] | 0.69 |
-| improved | 66 | 0.576 | 0.575 | [0.440, 0.705] | 1.45 |
+| baseline | 66 | 0.530 | 0.533 | [0.402, 0.656] | 3.51 |
+| improved | 66 | 0.576 | 0.575 | [0.440, 0.705] | 2.81 |
 
 Paired macro-F1 delta: **0.042**, 95% paired-bootstrap interval **[-0.032, 0.128]**. The interval includes zero: improvement is observed on this sample, **not demonstrated to be statistically reliable**. 500 row-resamples, seed 42, fixed three-class macro averaging. These exploratory intervals describe the authored corpus and do not establish population generalization.
 
@@ -93,7 +93,7 @@ Every row below is a real incorrect improved-model prediction from `reports/pred
 
 ## Embeddings and summaries
 
-Training TF-IDF → 32D SVD → L2 embeddings, explained variance 0.473. Demo input: 15 comments, 5 KMeans clusters; cosine silhouette **0.232**. This is internal compactness only; no gold topic labels means topic correctness is **unmeasured**. Full batch runtime including prediction/embeddings/clustering/summary: 21.66 ms in the measured run.
+Training TF-IDF → 32D SVD → L2 embeddings, explained variance 0.473. Demo input: 15 comments, 5 KMeans clusters; cosine silhouette **0.232**. This is internal compactness only; no gold topic labels means topic correctness is **unmeasured**. Full batch runtime including prediction/embeddings/clustering/summary: 21.10 ms in the measured run.
 
 The deterministic summary recounts model predictions and quotes a masked representative comment. Counts are verified by the functional tests; summary interpretation still needs human review. No LLM-based generation quality or factuality metric is claimed.
 
@@ -101,10 +101,10 @@ The deterministic summary recounts model predictions and quotes a masked represe
 
 | Training N | Validation macro-F1 | Fit seconds |
 | --- | --- | --- |
-| 25 | 0.478 | 0.0099 |
-| 51 | 0.487 | 0.0133 |
-| 76 | 0.630 | 0.0184 |
-| 102 | 0.602 | 0.0240 |
+| 25 | 0.478 | 0.0118 |
+| 51 | 0.487 | 0.0117 |
+| 76 | 0.630 | 0.0133 |
+| 102 | 0.602 | 0.0362 |
 
 Fixed selected C; stratified train subsets, validation-only scores. Scores are nonmonotonic, with tiny single samples per size, so they do not prove a scaling trend. See `DECISIONS.md` for the evidence-based no-fine-tuning justification explicitly allowed by the capstone. No encoder or LoRA fine-tuning was run.
 

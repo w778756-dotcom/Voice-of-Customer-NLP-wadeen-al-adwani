@@ -22,13 +22,13 @@ ROOT = Path.cwd()
 if not (ROOT / "pyproject.toml").exists():
     ROOT = ROOT.parent
 assert (ROOT / "data/feedback.csv").exists(), "Run from the project root or notebooks/"
-os.environ.setdefault("MPLCONFIGDIR", "/tmp/bayan-matplotlib")
+os.environ.setdefault("MPLCONFIGDIR", "/tmp/voice_of_customer-matplotlib")
 os.environ.setdefault("XDG_CACHE_HOME", "/workspace/.cache")
 sys.path.insert(0, str(ROOT / "src"))
 import pandas as pd
 from IPython.display import display, Markdown
-from bayan.pipeline import load_analyzer
-from bayan.text import normalize
+from voice_of_customer.pipeline import load_analyzer
+from voice_of_customer.text import normalize
 data = pd.read_csv(ROOT / "data/feedback.csv")
 display(data.groupby(["split", "lang", "label"]).size().rename("n").to_frame())
 assert not data.text.map(normalize).duplicated().any()
@@ -37,7 +37,7 @@ assert not data.text.map(normalize).duplicated().any()
 
 def main():
     notebook = nb.v4.new_notebook(cells=[
-        markdown('''# بيان — Voice of Customer Analyzer · المشروع ٣
+        markdown('''# Voice of Customer Analyzer · المشروع ٣
 **Wadeen Khalid Al adwani** · **المدرب: مضر محمد الفضلي** · **أكاديمية سدايا**
 
 تسليم فردي بموافقة المدرب وفق تأكيد المتدربة. الهدف: تصنيف مشاعر التعليقات وتجميع المشكلات وكتابة ملخص قابل للمراجعة. البيانات **198 مثالًا مؤلفًا تعليميًا** وليست بيانات عملاء حقيقيين. الكود والبيانات والتوثيق أُعدت بمساعدة برمجية معلنة.
@@ -46,7 +46,7 @@ def main():
         code(BOOTSTRAP),
         markdown('''## ١ — البيانات والخصوصية
 إيجابي/سلبي/محايد، فصحى وخليجي وإنجليزي. التقسيم ثابت؛ التطبيع لا يحذف النفي. لا تدخل metadata أو labels إلى الميزات. فحص exact duplicates لا يمنع التشابه الدلالي من مؤلف واحد. `DATA_CARD.md` يشرح حدود الترخيص والتعميم.'''),
-        code('''from bayan.text import mask_pii
+        code('''from voice_of_customer.text import mask_pii
 print(mask_pii("مو سيئ، البريد test@example.com والجوال 0501234567"))
 display(data[data.split == "test"][["id", "text", "label", "phenomenon"]].head(8))'''),
         markdown('''## ٢ — تدريب baseline والتحسين
@@ -113,8 +113,8 @@ plt.show()'''),
 - اختبارنا أصعب عمدًا ويشمل السخرية والنفي؛ المقاييس ليست تقديرًا عامًا لأداء العملاء.
 - الخطوة التالية: بيانات مرخصة جديدة، تدقيق PII مستقل، مراجعة تسميات ومجموعات لمنع تسرب المؤلف/المصدر.'''),
     ])
-    for name, document in [('bayan_NLP_Wadeen_Khalid_Al_adwani.ipynb', notebook), ('notebooks/01_exploration.ipynb', exploration)]:
-        document.metadata = {'kernelspec': {'display_name': 'Python 3.12 (Bayan)', 'language': 'python', 'name': 'python3'},
+    for name, document in [('Voice_of_Customer_NLP_Wadeen_Khalid_Al_adwani.ipynb', notebook), ('notebooks/01_exploration.ipynb', exploration)]:
+        document.metadata = {'kernelspec': {'display_name': 'Python 3.12 (Voice of Customer)', 'language': 'python', 'name': 'python3'},
                              'language_info': {'name': 'python', 'version': '3.12.14'}}
         nb.write(document, ROOT / name)
     print('Created two original notebooks.')
