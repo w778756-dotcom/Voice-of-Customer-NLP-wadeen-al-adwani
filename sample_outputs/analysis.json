@@ -1,0 +1,190 @@
+{
+  "total": 15,
+  "sentiment_counts": {
+    "negative": 7,
+    "neutral": 5,
+    "positive": 3
+  },
+  "review_count": 15,
+  "predictions": [
+    {
+      "text": "حصلت على مساعدة ممتازة لحل مشكلة الحساب",
+      "sentiment": "negative",
+      "sentiment_ar": "سلبي",
+      "confidence": 0.4293,
+      "needs_review": true,
+      "aspect": "التطبيق والدفع"
+    },
+    {
+      "text": "أداء الجهاز رائع بعد شهر من الاستخدام",
+      "sentiment": "neutral",
+      "sentiment_ar": "محايد",
+      "confidence": 0.3745,
+      "needs_review": true,
+      "aspect": "الجودة"
+    },
+    {
+      "text": "وصلت الشحنة مبكرا وبحالة جيدة",
+      "sentiment": "negative",
+      "sentiment_ar": "سلبي",
+      "confidence": 0.3814,
+      "needs_review": true,
+      "aspect": "التوصيل"
+    },
+    {
+      "text": "قيمة المنتج مناسبة وفاتورته واضحة",
+      "sentiment": "positive",
+      "sentiment_ar": "إيجابي",
+      "confidence": 0.4514,
+      "needs_review": true,
+      "aspect": "السعر"
+    },
+    {
+      "text": "التطبيق جميل ويسهل متابعة المشتريات",
+      "sentiment": "negative",
+      "sentiment_ar": "سلبي",
+      "confidence": 0.3652,
+      "needs_review": true,
+      "aspect": "التطبيق والدفع"
+    },
+    {
+      "text": "تعطلت عملية الدفع وخسرت وقتي",
+      "sentiment": "negative",
+      "sentiment_ar": "سلبي",
+      "confidence": 0.363,
+      "needs_review": true,
+      "aspect": "التطبيق والدفع"
+    },
+    {
+      "text": "التوصيل بطيء والمندوب لم يحضر",
+      "sentiment": "negative",
+      "sentiment_ar": "سلبي",
+      "confidence": 0.428,
+      "needs_review": true,
+      "aspect": "التوصيل"
+    },
+    {
+      "text": "الجهاز سيئ ولا يطابق الإعلان",
+      "sentiment": "negative",
+      "sentiment_ar": "سلبي",
+      "confidence": 0.3675,
+      "needs_review": true,
+      "aspect": "الجودة"
+    },
+    {
+      "text": "الدعم تجاهل المشكلة ولم يساعدني",
+      "sentiment": "positive",
+      "sentiment_ar": "إيجابي",
+      "confidence": 0.3868,
+      "needs_review": true,
+      "aspect": "الدعم والاسترجاع"
+    },
+    {
+      "text": "رسوم إضافية مرتفعة لم تذكر في الفاتورة",
+      "sentiment": "negative",
+      "sentiment_ar": "سلبي",
+      "confidence": 0.3439,
+      "needs_review": true,
+      "aspect": "السعر"
+    },
+    {
+      "text": "أرجو إرسال تفاصيل الضمان والصيانة",
+      "sentiment": "neutral",
+      "sentiment_ar": "محايد",
+      "confidence": 0.4095,
+      "needs_review": true,
+      "aspect": "أخرى"
+    },
+    {
+      "text": "هل يمكن شراء ملحقات الجهاز بشكل منفصل",
+      "sentiment": "neutral",
+      "sentiment_ar": "محايد",
+      "confidence": 0.4779,
+      "needs_review": true,
+      "aspect": "الجودة"
+    },
+    {
+      "text": "كيف أستطيع تفعيل إشعارات الطلب",
+      "sentiment": "neutral",
+      "sentiment_ar": "محايد",
+      "confidence": 0.4537,
+      "needs_review": true,
+      "aspect": "أخرى"
+    },
+    {
+      "text": "ما المستندات المطلوبة لاسترجاع المنتج",
+      "sentiment": "positive",
+      "sentiment_ar": "إيجابي",
+      "confidence": 0.3721,
+      "needs_review": true,
+      "aspect": "الدعم والاسترجاع"
+    },
+    {
+      "text": "يرجى شرح آلية احتساب قيمة الاشتراك",
+      "sentiment": "neutral",
+      "sentiment_ar": "محايد",
+      "confidence": 0.4354,
+      "needs_review": true,
+      "aspect": "السعر"
+    }
+  ],
+  "clusters": [
+    {
+      "cluster": 0,
+      "size": 4,
+      "topic": "الجودة",
+      "sentiment_counts": {
+        "neutral": 3,
+        "negative": 1
+      },
+      "representative": "أداء الجهاز رائع بعد شهر من الاستخدام",
+      "summary": "مجموعة الجودة: 4 تعليقًا، منها 1 سلبي، و0 إيجابي، و3 محايد. الأعداد مبنية على تنبؤات النموذج وتحتاج مراجعة بشرية."
+    },
+    {
+      "cluster": 1,
+      "size": 3,
+      "topic": "التطبيق والدفع",
+      "sentiment_counts": {
+        "negative": 2,
+        "positive": 1
+      },
+      "representative": "الدعم تجاهل المشكلة ولم يساعدني",
+      "summary": "مجموعة التطبيق والدفع: 3 تعليقًا، منها 2 سلبي، و1 إيجابي، و0 محايد. الأعداد مبنية على تنبؤات النموذج وتحتاج مراجعة بشرية."
+    },
+    {
+      "cluster": 2,
+      "size": 4,
+      "topic": "السعر",
+      "sentiment_counts": {
+        "positive": 2,
+        "negative": 2
+      },
+      "representative": "قيمة المنتج مناسبة وفاتورته واضحة",
+      "summary": "مجموعة السعر: 4 تعليقًا، منها 2 سلبي، و2 إيجابي، و0 محايد. الأعداد مبنية على تنبؤات النموذج وتحتاج مراجعة بشرية."
+    },
+    {
+      "cluster": 3,
+      "size": 2,
+      "topic": "التوصيل",
+      "sentiment_counts": {
+        "negative": 1,
+        "neutral": 1
+      },
+      "representative": "التوصيل بطيء والمندوب لم يحضر",
+      "summary": "مجموعة التوصيل: 2 تعليقًا، منها 1 سلبي، و0 إيجابي، و1 محايد. الأعداد مبنية على تنبؤات النموذج وتحتاج مراجعة بشرية."
+    },
+    {
+      "cluster": 4,
+      "size": 2,
+      "topic": "التوصيل",
+      "sentiment_counts": {
+        "negative": 1,
+        "neutral": 1
+      },
+      "representative": "كيف أستطيع تفعيل إشعارات الطلب",
+      "summary": "مجموعة التوصيل: 2 تعليقًا، منها 1 سلبي، و0 إيجابي، و1 محايد. الأعداد مبنية على تنبؤات النموذج وتحتاج مراجعة بشرية."
+    }
+  ],
+  "summary_method": "Local extractive representatives and deterministic count-based summaries; no LLM.",
+  "embedding_method": "Training-fitted TF-IDF → 32-dimensional SVD → L2 normalization"
+}

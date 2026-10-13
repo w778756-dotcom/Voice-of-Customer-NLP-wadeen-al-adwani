@@ -1,0 +1,80 @@
+{
+  "baseline": {
+    "n": 66,
+    "accuracy": 0.5303030303030303,
+    "macro_f1": 0.532536266539136,
+    "macro_f1_95ci": [
+      0.4022092192724637,
+      0.6561365593923733
+    ],
+    "confusion_matrix_labels": [
+      "negative",
+      "neutral",
+      "positive"
+    ],
+    "confusion_matrix": [
+      [
+        13,
+        4,
+        5
+      ],
+      [
+        6,
+        12,
+        4
+      ],
+      [
+        10,
+        2,
+        10
+      ]
+    ]
+  },
+  "improved": {
+    "n": 66,
+    "accuracy": 0.5757575757575758,
+    "macro_f1": 0.5748917748917749,
+    "macro_f1_95ci": [
+      0.4396962181031457,
+      0.7051887668434799
+    ],
+    "confusion_matrix_labels": [
+      "negative",
+      "neutral",
+      "positive"
+    ],
+    "confusion_matrix": [
+      [
+        16,
+        2,
+        4
+      ],
+      [
+        8,
+        10,
+        4
+      ],
+      [
+        9,
+        1,
+        12
+      ]
+    ]
+  },
+  "paired_delta": {
+    "macro_f1": 0.042355508352638904,
+    "95ci": [
+      -0.03202698936778443,
+      0.1279886405761241
+    ],
+    "note": "Exploratory bootstrap on a small synthetic test set, not population-level evidence."
+  },
+  "review_policy": {
+    "threshold": 0.55,
+    "coverage": 0.0,
+    "accepted_n": 0,
+    "review_n": 66,
+    "accepted_macro_f1": null,
+    "note": "Confidence is uncalibrated; 0.55 is a demo routing heuristic, not a tuned reliability guarantee."
+  }
+}

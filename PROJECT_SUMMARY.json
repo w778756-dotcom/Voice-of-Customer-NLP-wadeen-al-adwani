@@ -1,0 +1,30 @@
+{
+  "project_number": 3,
+  "project": "Bayan Voice of Customer Analyzer",
+  "student": "Wadeen Khalid Al adwani",
+  "instructor": "مضر محمد الفضلي",
+  "academy": "SDAIA Academy",
+  "team": "individual, student-confirmed instructor permission",
+  "dataset": {
+    "source": "authored synthetic v1",
+    "total": 198,
+    "train": 102,
+    "validation": 30,
+    "test": 66,
+    "sha256": "1590fcc1c0659e9f29e0e067d5d11cace10932e4bb9facff3d4a39e20588271b"
+  },
+  "test_metrics": {
+    "baseline_macro_f1": 0.532536266539136,
+    "improved_macro_f1": 0.5748917748917749,
+    "actual_errors": 28
+  },
+  "fine_tuning": {
+    "performed": false,
+    "alternative": "evidence-based written justification",
+    "document": "DECISIONS.md"
+  },
+  "representation": "train-fitted TF-IDF/SVD latent semantic embeddings, not transformer embeddings",
+  "production_ready": false,
+  "submitted_to_instructor": false,
+  "api_required": false
+}

@@ -1,0 +1,199 @@
+id,text,label,split,lang,dialect,phenomenon,source
+VOC-0001,وصل الطلب في الموعد وكانت العبوة سليمة,positive,train,ar,msa,ordinary,authored_synthetic_v1
+VOC-0002,المنتج ممتاز ويعمل بكفاءة عالية,positive,train,ar,msa,ordinary,authored_synthetic_v1
+VOC-0003,خدمة العملاء أجابت عن استفساري بسرعة,positive,train,ar,msa,ordinary,authored_synthetic_v1
+VOC-0004,السعر مناسب مقارنة بالجودة,positive,train,ar,msa,ordinary,authored_synthetic_v1
+VOC-0005,واجهة التطبيق واضحة وسهلة الاستخدام,positive,train,ar,msa,ordinary,authored_synthetic_v1
+VOC-0006,تم استرجاع المبلغ دون تأخير,positive,train,ar,msa,ordinary,authored_synthetic_v1
+VOC-0007,التوصيل سريع والمندوب محترم,positive,train,ar,msa,ordinary,authored_synthetic_v1
+VOC-0008,جودة المواد أفضل مما توقعت,positive,train,ar,msa,ordinary,authored_synthetic_v1
+VOC-0009,وجدت كل التفاصيل المطلوبة في صفحة المنتج,positive,train,ar,msa,ordinary,authored_synthetic_v1
+VOC-0010,تجربة الشراء مريحة وسأكررها,positive,train,ar,msa,ordinary,authored_synthetic_v1
+VOC-0011,التغليف متين ويحمي المحتويات,positive,train,ar,msa,ordinary,authored_synthetic_v1
+VOC-0012,الدعم الفني حل المشكلة من أول اتصال,positive,train,ar,msa,ordinary,authored_synthetic_v1
+VOC-0013,العرض جيد ووفر علي الكثير,positive,train,ar,msa,ordinary,authored_synthetic_v1
+VOC-0014,الدفع آمن وأتممت العملية بسهولة,positive,train,ar,msa,ordinary,authored_synthetic_v1
+VOC-0015,الفاتورة واضحة ولا توجد رسوم إضافية,positive,train,ar,msa,ordinary,authored_synthetic_v1
+VOC-0016,الطلب وصل بدري وكل شي تمام,positive,train,ar,gulf,ordinary,authored_synthetic_v1
+VOC-0017,التطبيق يجنن وسهل مرة,positive,train,ar,gulf,ordinary,authored_synthetic_v1
+VOC-0018,يعطيكم العافية الخدمة رهيبة,positive,train,ar,gulf,ordinary,authored_synthetic_v1
+VOC-0019,السعر زين على هالجودة,positive,train,ar,gulf,ordinary,authored_synthetic_v1
+VOC-0020,المندوب كفو وتعامل بأدب,positive,train,ar,gulf,ordinary,authored_synthetic_v1
+VOC-0021,خدمتكم حلوة وبطلب منكم ثاني,positive,train,ar,gulf,ordinary,authored_synthetic_v1
+VOC-0022,المنتج مضبوط وما فيه عيوب,positive,train,ar,gulf,ordinary,authored_synthetic_v1
+VOC-0023,ردوا علي بسرعة وحلوا الموضوع,positive,train,ar,gulf,ordinary,authored_synthetic_v1
+VOC-0024,الشحن ما طول وفرحت بالطلب,positive,train,ar,gulf,ordinary,authored_synthetic_v1
+VOC-0025,خصمكم يستاهل والشراء مريح,positive,train,ar,gulf,ordinary,authored_synthetic_v1
+VOC-0026,التغليف مرتب وما انكسر شي,positive,train,ar,gulf,ordinary,authored_synthetic_v1
+VOC-0027,الله يسعدكم رجعتوا فلوسي بسرعة,positive,train,ar,gulf,ordinary,authored_synthetic_v1
+VOC-0028,الدفع مشى معي من أول مرة,positive,train,ar,gulf,ordinary,authored_synthetic_v1
+VOC-0029,التحديث الجديد عجبني كثير,positive,train,ar,gulf,ordinary,authored_synthetic_v1
+VOC-0030,المقاس طلع مضبوط مثل الوصف,positive,train,ar,gulf,ordinary,authored_synthetic_v1
+VOC-0031,تأخر التوصيل عدة أيام دون توضيح,negative,train,ar,msa,ordinary,authored_synthetic_v1
+VOC-0032,المنتج مكسور ولا يمكن استخدامه,negative,train,ar,msa,ordinary,authored_synthetic_v1
+VOC-0033,لم يرد الدعم على رسائلي المتكررة,negative,train,ar,msa,ordinary,authored_synthetic_v1
+VOC-0034,السعر مرتفع ولا يستحق الجودة,negative,train,ar,msa,ordinary,authored_synthetic_v1
+VOC-0035,التطبيق يتوقف عند إكمال الدفع,negative,train,ar,msa,ordinary,authored_synthetic_v1
+VOC-0036,تم خصم المبلغ مرتين من الحساب,negative,train,ar,msa,ordinary,authored_synthetic_v1
+VOC-0037,وصلت العبوة ممزقة وبعض القطع مفقودة,negative,train,ar,msa,ordinary,authored_synthetic_v1
+VOC-0038,جودة المنتج رديئة ومختلفة عن الوصف,negative,train,ar,msa,ordinary,authored_synthetic_v1
+VOC-0039,الخدمة سيئة ولن أكرر الشراء,negative,train,ar,msa,ordinary,authored_synthetic_v1
+VOC-0040,لم أستلم المبلغ المسترد حتى الآن,negative,train,ar,msa,ordinary,authored_synthetic_v1
+VOC-0041,تسجيل الدخول يفشل رغم صحة كلمة المرور,negative,train,ar,msa,ordinary,authored_synthetic_v1
+VOC-0042,المندوب كان فظا في التعامل,negative,train,ar,msa,ordinary,authored_synthetic_v1
+VOC-0043,رسوم الشحن مرتفعة جدا,negative,train,ar,msa,ordinary,authored_synthetic_v1
+VOC-0044,التحديث سبب بطئا شديدا في التطبيق,negative,train,ar,msa,ordinary,authored_synthetic_v1
+VOC-0045,تم إرسال لون مختلف عن الذي طلبته,negative,train,ar,msa,ordinary,authored_synthetic_v1
+VOC-0046,الشحنة للحين ما وصلت وتعبت من الانتظار,negative,train,ar,gulf,ordinary,authored_synthetic_v1
+VOC-0047,التطبيق يعلق كل شوي,negative,train,ar,gulf,ordinary,authored_synthetic_v1
+VOC-0048,خدمتكم مو زينة وما راح أرجع,negative,train,ar,gulf,ordinary,authored_synthetic_v1
+VOC-0049,السعر غالي على الفاضي,negative,train,ar,gulf,ordinary,authored_synthetic_v1
+VOC-0050,المندوب ما رد علي وضيع وقتي,negative,train,ar,gulf,ordinary,authored_synthetic_v1
+VOC-0051,وصلني المنتج خربان,negative,train,ar,gulf,ordinary,authored_synthetic_v1
+VOC-0052,الدعم يسحب علي من أمس,negative,train,ar,gulf,ordinary,authored_synthetic_v1
+VOC-0053,خصمتوا مني مرتين وش السالفة,negative,train,ar,gulf,ordinary,authored_synthetic_v1
+VOC-0054,التغليف تعبان والقطعة انكسرت,negative,train,ar,gulf,ordinary,authored_synthetic_v1
+VOC-0055,ما رجعتوا فلوسي مع إني رجعت الطلب,negative,train,ar,gulf,ordinary,authored_synthetic_v1
+VOC-0056,اللون غير اللي اخترته وزعلت,negative,train,ar,gulf,ordinary,authored_synthetic_v1
+VOC-0057,ما قدرت أدخل حسابي,negative,train,ar,gulf,ordinary,authored_synthetic_v1
+VOC-0058,الجودة سيئة مرة وما تسوى,negative,train,ar,gulf,ordinary,authored_synthetic_v1
+VOC-0059,التوصيل بطيء والخدمة أسوأ,negative,train,ar,gulf,ordinary,authored_synthetic_v1
+VOC-0060,الطلب ناقص وما أحد حل مشكلتي,negative,train,ar,gulf,ordinary,authored_synthetic_v1
+VOC-0061,أود معرفة موعد وصول الطلب,neutral,train,ar,msa,ordinary,authored_synthetic_v1
+VOC-0062,هل يتوفر هذا المنتج باللون الأسود,neutral,train,ar,msa,ordinary,authored_synthetic_v1
+VOC-0063,كيف يمكن تغيير عنوان التوصيل,neutral,train,ar,msa,ordinary,authored_synthetic_v1
+VOC-0064,أحتاج نسخة من فاتورة الشراء,neutral,train,ar,msa,ordinary,authored_synthetic_v1
+VOC-0065,ما هي سياسة استرجاع المنتجات,neutral,train,ar,msa,ordinary,authored_synthetic_v1
+VOC-0066,يرجى توضيح طريقة استخدام القسيمة,neutral,train,ar,msa,ordinary,authored_synthetic_v1
+VOC-0067,هل تدعمون الدفع عند الاستلام,neutral,train,ar,msa,ordinary,authored_synthetic_v1
+VOC-0068,أرغب في معرفة مقاسات المنتج,neutral,train,ar,msa,ordinary,authored_synthetic_v1
+VOC-0069,ما مدة ضمان هذا الجهاز,neutral,train,ar,msa,ordinary,authored_synthetic_v1
+VOC-0070,أين أجد رقم تتبع الشحنة,neutral,train,ar,msa,ordinary,authored_synthetic_v1
+VOC-0071,هل يوجد فرع في مدينة الرياض,neutral,train,ar,msa,ordinary,authored_synthetic_v1
+VOC-0072,أريد تحديث رقم الهاتف في حسابي,neutral,train,ar,msa,ordinary,authored_synthetic_v1
+VOC-0073,هل يمكن جمع طلبين في شحنة واحدة,neutral,train,ar,msa,ordinary,authored_synthetic_v1
+VOC-0074,ما الفرق بين الباقتين المتاحتين,neutral,train,ar,msa,ordinary,authored_synthetic_v1
+VOC-0075,أحتاج معلومات عن رسوم التوصيل,neutral,train,ar,msa,ordinary,authored_synthetic_v1
+VOC-0076,متى يوصل طلبي,neutral,train,ar,gulf,ordinary,authored_synthetic_v1
+VOC-0077,عندكم مقاس أكبر من هذا,neutral,train,ar,gulf,ordinary,authored_synthetic_v1
+VOC-0078,كيف أغير العنوان في التطبيق,neutral,train,ar,gulf,ordinary,authored_synthetic_v1
+VOC-0079,أبي نسخة الفاتورة لو سمحتوا,neutral,train,ar,gulf,ordinary,authored_synthetic_v1
+VOC-0080,وش طريقة إرجاع الطلب,neutral,train,ar,gulf,ordinary,authored_synthetic_v1
+VOC-0081,وين أكتب كود الخصم,neutral,train,ar,gulf,ordinary,authored_synthetic_v1
+VOC-0082,تقبلون كاش وقت التوصيل,neutral,train,ar,gulf,ordinary,authored_synthetic_v1
+VOC-0083,كم مدة الضمان عندكم,neutral,train,ar,gulf,ordinary,authored_synthetic_v1
+VOC-0084,كيف أتابع الشحنة,neutral,train,ar,gulf,ordinary,authored_synthetic_v1
+VOC-0085,عندكم فرع بجدة,neutral,train,ar,gulf,ordinary,authored_synthetic_v1
+VOC-0086,أقدر أغير رقم جوالي,neutral,train,ar,gulf,ordinary,authored_synthetic_v1
+VOC-0087,وش الفرق بين هالنوعين,neutral,train,ar,gulf,ordinary,authored_synthetic_v1
+VOC-0088,أبي أعرف سعر الاشتراك,neutral,train,ar,gulf,ordinary,authored_synthetic_v1
+VOC-0089,تفتحون يوم الجمعة,neutral,train,ar,gulf,ordinary,authored_synthetic_v1
+VOC-0090,وين أحصل تفاصيل المقاسات,neutral,train,ar,gulf,ordinary,authored_synthetic_v1
+VOC-0091,استلمت الشحنة بأمان وفي وقت قياسي,positive,validation,ar,msa,ordinary,authored_synthetic_v1
+VOC-0092,التعامل مهني والاستجابة فعالة,positive,validation,ar,msa,ordinary,authored_synthetic_v1
+VOC-0093,المواد متينة والتصميم أنيق,positive,validation,ar,msa,ordinary,authored_synthetic_v1
+VOC-0094,شراء ناجح بسعر اقتصادي,positive,validation,ar,msa,ordinary,authored_synthetic_v1
+VOC-0095,أعجبتني سهولة البحث في التطبيق,positive,validation,ar,msa,ordinary,authored_synthetic_v1
+VOC-0096,وصلني كل اللي طلبته وفرحت,positive,validation,ar,gulf,ordinary,authored_synthetic_v1
+VOC-0097,الموظف ساعدني وما قصر,positive,validation,ar,gulf,ordinary,authored_synthetic_v1
+VOC-0098,المنتج حلو ويستاهل قيمته,positive,validation,ar,gulf,ordinary,authored_synthetic_v1
+VOC-0099,التطبيق مريح وما علق معي,positive,validation,ar,gulf,ordinary,authored_synthetic_v1
+VOC-0100,طلبت أمس واستلمت اليوم يا سلام,positive,validation,ar,gulf,ordinary,authored_synthetic_v1
+VOC-0101,الانتظار طويل ولم تصل الشحنة,negative,validation,ar,msa,ordinary,authored_synthetic_v1
+VOC-0102,واجهت أخطاء متكررة عند تسجيل الحساب,negative,validation,ar,msa,ordinary,authored_synthetic_v1
+VOC-0103,السعر مبالغ فيه والخامة ضعيفة,negative,validation,ar,msa,ordinary,authored_synthetic_v1
+VOC-0104,الموظف تجاهل الشكوى تماما,negative,validation,ar,msa,ordinary,authored_synthetic_v1
+VOC-0105,لم يعمل الجهاز بعد فتح العبوة,negative,validation,ar,msa,ordinary,authored_synthetic_v1
+VOC-0106,يا ليتني ما طلبت تأخير وقهر,negative,validation,ar,gulf,ordinary,authored_synthetic_v1
+VOC-0107,كل ما أدفع يطلع لي خطأ,negative,validation,ar,gulf,ordinary,authored_synthetic_v1
+VOC-0108,رد الدعم ما فادني أبدا,negative,validation,ar,gulf,ordinary,authored_synthetic_v1
+VOC-0109,الجهاز تعبان وما يشتغل,negative,validation,ar,gulf,ordinary,authored_synthetic_v1
+VOC-0110,قيمة التوصيل نار وما تستاهل,negative,validation,ar,gulf,ordinary,authored_synthetic_v1
+VOC-0111,هل يمكن تعديل بيانات الفاتورة,neutral,validation,ar,msa,ordinary,authored_synthetic_v1
+VOC-0112,ما خيارات الشحن المتاحة,neutral,validation,ar,msa,ordinary,authored_synthetic_v1
+VOC-0113,أبحث عن تفاصيل خطة الاشتراك,neutral,validation,ar,msa,ordinary,authored_synthetic_v1
+VOC-0114,أين يمكن تنزيل دليل الاستخدام,neutral,validation,ar,msa,ordinary,authored_synthetic_v1
+VOC-0115,هل توجد خدمة تركيب الجهاز,neutral,validation,ar,msa,ordinary,authored_synthetic_v1
+VOC-0116,وش المدن اللي توصلون لها,neutral,validation,ar,gulf,ordinary,authored_synthetic_v1
+VOC-0117,كيف ألغي اشتراكي,neutral,validation,ar,gulf,ordinary,authored_synthetic_v1
+VOC-0118,عندكم هالقطعة بالمخزن,neutral,validation,ar,gulf,ordinary,authored_synthetic_v1
+VOC-0119,أبي أعرف طريقة الدفع بالتقسيط,neutral,validation,ar,gulf,ordinary,authored_synthetic_v1
+VOC-0120,متى يبدأ العرض الجاي,neutral,validation,ar,gulf,ordinary,authored_synthetic_v1
+VOC-0121,حصلت على مساعدة ممتازة لحل مشكلة الحساب,positive,test,ar,msa,ordinary,authored_synthetic_v1
+VOC-0122,أداء الجهاز رائع بعد شهر من الاستخدام,positive,test,ar,msa,ordinary,authored_synthetic_v1
+VOC-0123,وصلت الشحنة مبكرا وبحالة جيدة,positive,test,ar,msa,ordinary,authored_synthetic_v1
+VOC-0124,قيمة المنتج مناسبة وفاتورته واضحة,positive,test,ar,msa,ordinary,authored_synthetic_v1
+VOC-0125,التطبيق جميل ويسهل متابعة المشتريات,positive,test,ar,msa,ordinary,authored_synthetic_v1
+VOC-0126,لم يتأخر الطلب هذه المرة,positive,test,ar,msa,negation,authored_synthetic_v1
+VOC-0127,ليست الجودة سيئة كما كنت أخشى,positive,test,ar,msa,negation,authored_synthetic_v1
+VOC-0128,لا مشكلة في الدفع بعد الإصلاح,positive,test,ar,msa,negation,authored_synthetic_v1
+VOC-0129,السعر مرتفع لكن المنتج يستحق كل ريال,positive,test,ar,msa,mixed,authored_synthetic_v1
+VOC-0130,لم يعجبني التغليف لكن الخدمة عوضتني وأرضتني,positive,test,ar,msa,mixed,authored_synthetic_v1
+VOC-0131,شغل مرتب والمندوب محترم الله يعطيه العافية,positive,test,ar,gulf,ordinary,authored_synthetic_v1
+VOC-0132,جهاز ممتاز ومناسب لاحتياجي,positive,test,ar,gulf,ordinary,authored_synthetic_v1
+VOC-0133,ردوا علي وحلوا مشكلتي بسرعة رهيبة,positive,test,ar,gulf,ordinary,authored_synthetic_v1
+VOC-0134,التطبيق سهل وواضح ويختصر الوقت,positive,test,ar,gulf,ordinary,authored_synthetic_v1
+VOC-0135,التوصيل سريع وكل الطلب كامل,positive,test,ar,gulf,ordinary,authored_synthetic_v1
+VOC-0136,ما توقعت يكون بهالجمال,positive,test,ar,gulf,dialect,authored_synthetic_v1
+VOC-0137,ما قصروا معي أبد,positive,test,ar,gulf,dialect,authored_synthetic_v1
+VOC-0138,مو غالي إذا شفت جودته,positive,test,ar,gulf,negation,authored_synthetic_v1
+VOC-0139,ما فيه أي عيب يستاهل المدح,positive,test,ar,gulf,negation,authored_synthetic_v1
+VOC-0140,أخيرا بعد التعب صار التطبيق مضبوط وأنا راضية,positive,test,ar,gulf,mixed,authored_synthetic_v1
+VOC-0141,تعطلت عملية الدفع وخسرت وقتي,negative,test,ar,msa,ordinary,authored_synthetic_v1
+VOC-0142,التوصيل بطيء والمندوب لم يحضر,negative,test,ar,msa,ordinary,authored_synthetic_v1
+VOC-0143,الجهاز سيئ ولا يطابق الإعلان,negative,test,ar,msa,ordinary,authored_synthetic_v1
+VOC-0144,الدعم تجاهل المشكلة ولم يساعدني,negative,test,ar,msa,ordinary,authored_synthetic_v1
+VOC-0145,رسوم إضافية مرتفعة لم تذكر في الفاتورة,negative,test,ar,msa,ordinary,authored_synthetic_v1
+VOC-0146,يا لها من خدمة رائعة انتظرت أسبوعين بلا جواب,negative,test,ar,msa,sarcasm,authored_synthetic_v1
+VOC-0147,شكرا على المنتج المكسور هدية ممتازة فعلا,negative,test,ar,msa,sarcasm,authored_synthetic_v1
+VOC-0148,ليست تجربة تستحق التكرار,negative,test,ar,msa,negation,authored_synthetic_v1
+VOC-0149,التطبيق رائع في إضاعة وقت المستخدم,negative,test,ar,msa,sarcasm,authored_synthetic_v1
+VOC-0150,الجهاز ممتاز شكلا لكنه لا يعمل إطلاقا,negative,test,ar,msa,mixed,authored_synthetic_v1
+VOC-0151,الطلب ناقص والتغليف سيئ مرة,negative,test,ar,gulf,ordinary,authored_synthetic_v1
+VOC-0152,التطبيق يعلق والدفع ما يتم,negative,test,ar,gulf,ordinary,authored_synthetic_v1
+VOC-0153,سعر غالي وخامة رديئة,negative,test,ar,gulf,ordinary,authored_synthetic_v1
+VOC-0154,رجعت القطعة وللحين الفلوس ما رجعت,negative,test,ar,gulf,ordinary,authored_synthetic_v1
+VOC-0155,المندوب تأخر ورفض يرد,negative,test,ar,gulf,ordinary,authored_synthetic_v1
+VOC-0156,كفو عليكم خصم مرتين ولا اعتذار,negative,test,ar,gulf,sarcasm,authored_synthetic_v1
+VOC-0157,ما شاء الله سرعة أسبوعين عشان شحنة,negative,test,ar,gulf,sarcasm,authored_synthetic_v1
+VOC-0158,البرنامج يفصل معي وش هالبهذلة,negative,test,ar,gulf,dialect,authored_synthetic_v1
+VOC-0159,خدمة ترفع الضغط وطفشت,negative,test,ar,gulf,dialect,authored_synthetic_v1
+VOC-0160,التوصيل سريع بس أرسلوا جهاز خربان وهذا مو مقبول,negative,test,ar,gulf,mixed,authored_synthetic_v1
+VOC-0161,أرجو إرسال تفاصيل الضمان والصيانة,neutral,test,ar,msa,ordinary,authored_synthetic_v1
+VOC-0162,هل يمكن شراء ملحقات الجهاز بشكل منفصل,neutral,test,ar,msa,ordinary,authored_synthetic_v1
+VOC-0163,كيف أستطيع تفعيل إشعارات الطلب,neutral,test,ar,msa,ordinary,authored_synthetic_v1
+VOC-0164,ما المستندات المطلوبة لاسترجاع المنتج,neutral,test,ar,msa,ordinary,authored_synthetic_v1
+VOC-0165,يرجى شرح آلية احتساب قيمة الاشتراك,neutral,test,ar,msa,ordinary,authored_synthetic_v1
+VOC-0166,هل الخدمة ممتازة فعلا أم مجرد إعلان,neutral,test,ar,msa,question,authored_synthetic_v1
+VOC-0167,أرى تعليقات تقول إن التطبيق سيئ هل أصلحتموه,neutral,test,ar,msa,question,authored_synthetic_v1
+VOC-0168,هل السعر غالي مقارنة بالنسخة السابقة,neutral,test,ar,msa,question,authored_synthetic_v1
+VOC-0169,لم أجرب المنتج بعد لذلك لا أستطيع تقييمه,neutral,test,ar,msa,insufficient_evidence,authored_synthetic_v1
+VOC-0170,وصل الطلب اليوم ولم أفتح الصندوق بعد,neutral,test,ar,msa,insufficient_evidence,authored_synthetic_v1
+VOC-0171,عندي استفسار عن التوصيل للقرى,neutral,test,ar,gulf,ordinary,authored_synthetic_v1
+VOC-0172,وين ألقى سجل الطلبات القديمة,neutral,test,ar,gulf,ordinary,authored_synthetic_v1
+VOC-0173,هل أقدر أطلب قطعتين بنفس الفاتورة,neutral,test,ar,gulf,ordinary,authored_synthetic_v1
+VOC-0174,كيف أوصل لخدمة المحادثة,neutral,test,ar,gulf,ordinary,authored_synthetic_v1
+VOC-0175,وش المطلوب عشان أفعل الحساب,neutral,test,ar,gulf,ordinary,authored_synthetic_v1
+VOC-0176,الناس تمدح الجودة أبي أعرف وش المواصفات,neutral,test,ar,gulf,question,authored_synthetic_v1
+VOC-0177,يقولون خدمتكم سيئة هل تغير الوضع,neutral,test,ar,gulf,question,authored_synthetic_v1
+VOC-0178,التطبيق يجنن مثل ما يقولون ولا أجرب غيره,neutral,test,ar,gulf,question,authored_synthetic_v1
+VOC-0179,جاني المنتج ولسه ما استخدمته,neutral,test,ar,gulf,insufficient_evidence,authored_synthetic_v1
+VOC-0180,ماني مع ولا ضد بس أبي أعرف التفاصيل,neutral,test,ar,gulf,insufficient_evidence,authored_synthetic_v1
+VOC-0181,Delivery was fast and the parcel arrived safely,positive,train,en,english,ordinary,authored_synthetic_v1
+VOC-0182,Great quality and a fair price,positive,train,en,english,ordinary,authored_synthetic_v1
+VOC-0183,Customer support solved my issue quickly,positive,train,en,english,ordinary,authored_synthetic_v1
+VOC-0184,The app is easy to use and payment works,positive,train,en,english,ordinary,authored_synthetic_v1
+VOC-0185,The product is broken and support ignores me,negative,train,en,english,ordinary,authored_synthetic_v1
+VOC-0186,Delivery is late and shipping costs too much,negative,train,en,english,ordinary,authored_synthetic_v1
+VOC-0187,The app crashes every time I pay,negative,train,en,english,ordinary,authored_synthetic_v1
+VOC-0188,Poor quality and an expensive price,negative,train,en,english,ordinary,authored_synthetic_v1
+VOC-0189,How can I track my order,neutral,train,en,english,ordinary,authored_synthetic_v1
+VOC-0190,What is the return policy,neutral,train,en,english,ordinary,authored_synthetic_v1
+VOC-0191,Can I update my delivery address,neutral,train,en,english,ordinary,authored_synthetic_v1
+VOC-0192,Which payment methods are available,neutral,train,en,english,ordinary,authored_synthetic_v1
+VOC-0193,Excellent service and reliable delivery,positive,test,en,english,ordinary,authored_synthetic_v1
+VOC-0194,Not a bad product at all,positive,test,en,english,negation,authored_synthetic_v1
+VOC-0195,Thanks for the wonderful broken package,negative,test,en,english,sarcasm,authored_synthetic_v1
+VOC-0196,Very slow app and unhelpful support,negative,test,en,english,ordinary,authored_synthetic_v1
+VOC-0197,Is the quality really great as advertised,neutral,test,en,english,question,authored_synthetic_v1
+VOC-0198,Please explain the warranty coverage,neutral,test,en,english,ordinary,authored_synthetic_v1

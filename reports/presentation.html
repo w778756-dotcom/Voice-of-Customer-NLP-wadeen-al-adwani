@@ -1,0 +1,78 @@
+<!doctype html><html lang="ar" dir="rtl"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>بيان — Wadeen</title><style>
+body{margin:0;background:#0b1729;color:#f4f7fc;font-family:Tahoma,Arial,sans-serif} .slide{display:none;box-sizing:border-box;min-height:90vh;padding:4vw 7vw;font-size:clamp(16px,2vw,25px);line-height:1.8}.slide.active{display:block}h1{color:#67e8d0;font-size:1.6em}strong{color:#fde68a}table{border-collapse:collapse;font-size:.7em;direction:ltr}th,td{padding:.4em;border:1px solid #53617b}code{direction:ltr;display:inline-block;background:#203047;padding:.1em .4em;border-radius:5px}nav{padding:10px 7vw;display:flex;gap:20px;align-items:center}button{background:#67e8d0;border:0;padding:10px 20px;border-radius:6px;cursor:pointer;font-size:16px}@media print{.slide{display:block;page-break-after:always;background:white;color:black;min-height:auto}nav{display:none}strong,h1{color:black}}
+</style><body><section class="slide"><h1>١ — بيان: تحليل صوت العميل</h1>
+<p><strong>Wadeen Khalid Al adwani</strong></p>
+<p>المدرب: <strong>مضر محمد الفضلي</strong>
+أكاديمية سدايا · المشروع رقم ٣ · تسليم فردي بموافقة المدرب وفق تأكيد المتدربة</p>
+<p>الهدف: تحويل تعليقات عربية متفرقة إلى مشاعر ومجموعات مشكلات وملخصات قابلة للمراجعة.</p>
+<p><strong>ملاحظات المتحدثة — ٠:٤٥:</strong> عرفي بنفسك وبالمشكلة، وأوضحي أن النموذج تعليمي.</p>
+</section>
+<section class="slide"><h1>٢ — المشكلة والبيانات</h1>
+<ul>
+<li>مدخل: تعليق أو ملف CSV. مخرج: المشاعر والموضوع والمجموعات وملخص مع شاهد.</li>
+<li>198 مثالًا مؤلفًا: train 102، validation 30، test 66.</li>
+<li>فصحى وخليجي وإنجليزي؛ إيجابي وسلبي ومحايد.</li>
+<li>البيانات ليست عملاء حقيقيين؛ أسماء وأرقام حقيقية غير مستخدمة.</li>
+</ul>
+<p><strong>ملاحظات — ١:٠٠:</strong> لا تصفي البيانات بأنها مجموعة عامة أو حقيقية. اشرحي بطاقة البيانات.</p>
+</section>
+<section class="slide"><h1>٣ — البنية والمقارنة</h1>
+<ul>
+<li>إخفاء بريد وهاتف، تطبيع عربي مع الاحتفاظ بالنفي.</li>
+<li>الأساسي: TF-IDF كلمات + Naive Bayes.</li>
+<li>المحسن: كلمات ومقاطع حروف + Logistic Regression.</li>
+<li>Embeddings: SVD محلي من train فقط؛ KMeans يجمع المشكلات.</li>
+<li>الملخص: أعداد تنبؤات وتعليق ممثل، دون API أو LLM.</li>
+</ul>
+<p><strong>ملاحظات — ١:٣٠:</strong> SVD ليس Transformer. أسماء المواضيع بقواعد، وتفسير المجموعة يحتاج مراجعة.</p>
+</section>
+<section class="slide"><h1>٤ — تجربة عادلة ونتائج فعلية</h1>
+<p>| System | Test N | Accuracy | Macro-F1 | 95% bootstrap CI | p95 single-comment ms |
+| --- | --- | --- | --- | --- | --- |
+| baseline | 66 | 0.530 | 0.533 | [0.402, 0.656] | 0.69 |
+| improved | 66 | 0.576 | 0.575 | [0.440, 0.705] | 1.45 |</p>
+<p>نفس الاختبار، دون تدريب عليه. اختيار C على validation فقط. فرق F1 = 0.042، وفاصل الثقة يشمل الصفر؛ لا ندعي تفوقًا عامًا. الإنجليزية 6 أمثلة فقط.</p>
+<p><strong>ملاحظات — ١:٣٠:</strong> Macro-F1 يوازن الفئات. وضحي لماذا الدقة وحدها لا تكفي وما يعني عدم حسم فرق النموذجين.</p>
+</section>
+<section class="slide"><h1>٥ — تحليل الأخطاء والمراجعة</h1>
+<p>28 خطأ فعليًا، تشمل النفي والسخرية والأسئلة واللهجة والنصوص المختلطة.</p>
+<ul>
+<li>«ليست الجودة سيئة» تختلف عن «الجودة سيئة».</li>
+<li>السؤال عن رأي إيجابي ليس بالضرورة رأيًا إيجابيًا من الكاتب.</li>
+<li>الثقة غير معايرة؛ عتبة 0.55 ترسل كل اختبارنا للمراجعة.</li>
+<li>لا نتخذ قرارًا مستقلًا تجاه العميل من هذا النموذج.</li>
+</ul>
+<p><strong>ملاحظات — ١:١٥:</strong> افتحي <code>reports/error_analysis.csv</code> لإظهار الأخطاء الفعلية؛ أمثلة الشريحة توضح الظواهر وليست بديلًا عن سجل الأخطاء.</p>
+</section>
+<section class="slide"><h1>٦ — لماذا لم ننفذ fine-tuning؟</h1>
+<ul>
+<li>المنهج يسمح بتبرير مدعوم بالأدلة بدل fine-tuning.</li>
+<li>102 مثال تدريب مؤلفًا، دون اتفاق مقيمين مستقلين.</li>
+<li>منحنى validation غير رتيب؛ البيانات غير ممثلة لواقع العملاء.</li>
+<li>فرق الأداء غير محسوم؛ لم نقارن Transformer ولا ندعي أنه أسوأ.</li>
+<li>التالي: بيانات مرخصة أوسع، ثم encoder مثبت الإصدار وfine-tuning مقابل baseline على اختبار جديد.</li>
+</ul>
+<p><strong>ملاحظات — ١:٠٠:</strong> اشرحي قرار النطاق بوضوح، ولا تسمي تدريب Logistic Regression fine-tuning لمحول.</p>
+</section>
+<section class="slide"><h1>٧ — العرض الحي</h1>
+<p>شغلي <code>uv run --frozen python app.py</code> بعد <code>bash scripts/run_all.sh</code>.</p>
+<ol>
+<li>أدخلي: «التوصيل سريع وكل الطلب كامل».</li>
+<li>أدخلي: «التطبيق يعلق والدفع ما يتم».</li>
+<li>أدخلي: «كيف أوصل لخدمة المحادثة».</li>
+<li>اعرضي المشاعر والمجموعات والملخص، ثم حملي <code>sample_outputs/demo_input.csv</code>.</li>
+</ol>
+<p>نسخة احتياطية قابلة للعرض: <code>sample_outputs/analysis.json</code> ومخرجات الدفتر. هذا ليس تسجيل فيديو؛ سجلي العرض بنفسك إذا طلب المدرب ذلك.</p>
+<p><strong>ملاحظات — ١:٣٠:</strong> جربي العرض قبل التقديم. لا تستخدمي بيانات عملاء شخصية.</p>
+</section>
+<section class="slide"><h1>٨ — الخلاصة والخطة</h1>
+<ul>
+<li>تنفيذ كامل قابل لإعادة التشغيل: تصنيف + embeddings + تجميع + تلخيص.</li>
+<li>مقارنة عادلة وشرائح و28 خطأ موثق وتبرير adaptation.</li>
+<li>حدود واضحة: بيانات مؤلفة صغيرة، ثقة غير معايرة، لا تقييم ذهبي للمواضيع.</li>
+<li>أولوية التطوير: بيانات حقيقية مصرح بها، تسميات مستقلة، معايرة، ثم مقارنة نماذج أقوى.</li>
+</ul>
+<p><strong>ملاحظات — ٠:٣٠:</strong> المجموع ١٠ دقائق؛ خصصي ٥ دقائق للأسئلة. العرض والمراجعة والتسليم للمدرب لم تنفذ تلقائيًا. افصحي عن المساعدة البرمجية حسب سياسة الدورة.</p>
+</section><nav><button id="prev">السابق</button><span id="counter"></span><button id="next">التالي</button></nav><script>
+const slides=[...document.querySelectorAll('.slide')];let current=0;function show(){slides.forEach((s,i)=>s.classList.toggle('active',i===current));document.querySelector('#counter').textContent=`${current+1} / ${slides.length}`;}function move(n){current=Math.max(0,Math.min(slides.length-1,current+n));show();}document.querySelector('#prev').onclick=()=>move(-1);document.querySelector('#next').onclick=()=>move(1);document.onkeydown=e=>{if(e.key==='ArrowLeft'||e.key==='PageDown')move(1);if(e.key==='ArrowRight'||e.key==='PageUp')move(-1)};show();
+</script></body></html>

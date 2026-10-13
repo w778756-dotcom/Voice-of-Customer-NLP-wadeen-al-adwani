@@ -1,0 +1,23 @@
+{
+  "seed": 42,
+  "train_n": 102,
+  "validation_n": 30,
+  "selection": "Highest validation macro-F1; first candidate wins ties. No train+validation refit.",
+  "candidates": [
+    {
+      "C": 0.5,
+      "validation_macro_f1": 0.6018518518518519
+    },
+    {
+      "C": 2.0,
+      "validation_macro_f1": 0.6018518518518519
+    },
+    {
+      "C": 8.0,
+      "validation_macro_f1": 0.6018518518518519
+    }
+  ],
+  "selected_C": 0.5,
+  "data_sha256": "1590fcc1c0659e9f29e0e067d5d11cace10932e4bb9facff3d4a39e20588271b",
+  "svd_explained_variance": 0.47291556304256555
+}
