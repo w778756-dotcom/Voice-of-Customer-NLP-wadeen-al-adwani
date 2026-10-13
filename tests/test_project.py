@@ -1,5 +1,4 @@
 import json
-from pathlib import Path
 
 import numpy as np
 import pandas as pd
@@ -55,7 +54,7 @@ def test_private_contact_never_appears_in_output():
     assert 'test@example.com' not in serialized and '0501234567' not in serialized
 
 
-@pytest.mark.parametrize('comments', [[], [''], [' '], [None], ['x' * 4001], ['x'] * 1001])
+@pytest.mark.parametrize('comments', [[], [''], [' '], [None], ['x' * 4001], ['x'] * 1001, 'ممتاز', None])
 def test_invalid_input_is_rejected(comments):
     with pytest.raises(ValueError):
         load_analyzer().analyze(comments)

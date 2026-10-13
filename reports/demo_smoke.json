@@ -4,6 +4,7 @@
   "text_api_comments": 3,
   "csv_api_comments": 15,
   "empty_input_rejected": true,
+  "invalid_csv_rejected": true,
   "share_tunnel": false,
   "server_stopped_by_test": true
 }

@@ -45,7 +45,7 @@ def main():
     write('EVALUATION_REPORT.md', f'''
 # Evaluation report — تقرير التقييم
 
-**Wadeen Khalid Al adwani** · SDAIA Academy · instructor: مضر محمد الفضلي · project 3
+**Wadeen Khalid Al adwani** · SDAIA Academy · instructor: مضر محمد الفضلي · Voice of Customer
 
 ## Protocol and measured outcomes
 
@@ -105,12 +105,12 @@ Paid API cost per 1,000 comments: **USD 0** (no API calls). Compute, hosting, el
 Reproduce via `bash scripts/run_all.sh`. Environment setup download time is not inference latency. Do not compare these CPU measurements to unmeasured GPU/transformer models.
 ''')
     write('README.md', f'''
-# Voice of Customer Analyzer
+# Voice of Customer
 
 **المتدربة:** Wadeen Khalid Al adwani
 
 **المدرب:** مضر محمد الفضلي
-**أكاديمية سدايا — المشروع رقم ٣ — تسليم فردي بموافقة المدرب وفق تأكيد المتدربة**
+**أكاديمية سدايا — مشروع Voice of Customer**
 
 تحليل تعليقات العملاء بالعربية: **تصنيف المشاعر، تجميع المشكلات باستخدام embeddings، وتلخيص الرؤى مع تعليق ممثل لكل مجموعة**. يأخذ النظام نصوصًا أو CSV ويعرض المشاعر والموضوع والثقة وطلب المراجعة البشرية. الهدف تسهيل قراءة التعليقات المتكررة، والمقياس الرئيس Macro-F1 على مجموعة اختبار ثابتة.
 
@@ -197,8 +197,8 @@ requirements-day1.txt  pyproject.toml     uv.lock
 
 ترخيص MIT للكود والأمثلة الأصلية. المصادر والقيود ومساهمة المساعد معلنة.
 ''')
-    summary = {'project_number': 3, 'project': 'Voice of Customer Analyzer', 'student': 'Wadeen Khalid Al adwani',
-               'instructor': 'مضر محمد الفضلي', 'academy': 'SDAIA Academy', 'team': 'individual, student-confirmed instructor permission',
+    summary = {'project': 'Voice of Customer', 'student': 'Wadeen Khalid Al adwani',
+               'instructor': 'مضر محمد الفضلي', 'academy': 'SDAIA Academy',
                'dataset': {'source': 'authored synthetic v1', 'total': 198, 'train': 102, 'validation': 30, 'test': 66, 'sha256': training['data_sha256']},
                'test_metrics': {'baseline_macro_f1': metrics['baseline']['macro_f1'], 'improved_macro_f1': metrics['improved']['macro_f1'], 'actual_errors': len(errors)},
                'fine_tuning': {'performed': False, 'alternative': 'evidence-based written justification', 'document': 'DECISIONS.md'},
@@ -211,7 +211,7 @@ requirements-day1.txt  pyproject.toml     uv.lock
 **Wadeen Khalid Al adwani**
 
 المدرب: **مضر محمد الفضلي**
-أكاديمية سدايا · المشروع رقم ٣ · تسليم فردي بموافقة المدرب وفق تأكيد المتدربة
+أكاديمية سدايا · مشروع Voice of Customer
 
 الهدف: تحويل تعليقات عربية متفرقة إلى مشاعر ومجموعات مشكلات وملخصات قابلة للمراجعة.
 

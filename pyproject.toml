@@ -1,7 +1,7 @@
 [project]
 name = "voice-of-customer-nlp"
 version = "1.0.0"
-description = "Arabic Voice of Customer capstone — SDAIA Academy, project 3"
+description = "Voice of Customer — Arabic customer feedback analysis, SDAIA Academy"
 requires-python = ">=3.12,<3.13"
 dependencies = [
   "numpy==2.2.6", "pandas==2.2.3", "scikit-learn==1.6.1", "scipy==1.15.3",
@@ -17,5 +17,5 @@ build-backend = "setuptools.build_meta"
 where = ["src"]
 
 [tool.pytest.ini_options]
-pythonpath = ["src"]
+pythonpath = ["src", "."]
 testpaths = ["tests"]

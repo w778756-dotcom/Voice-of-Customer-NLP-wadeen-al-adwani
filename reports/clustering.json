@@ -2,6 +2,6 @@
   "n": 15,
   "clusters": 5,
   "silhouette_cosine": 0.23217762226717995,
-  "end_to_end_batch_ms": 21.10176299993327,
+  "end_to_end_batch_ms": 31.108961999962048,
   "note": "Internal compactness only; no gold topic labels, topic accuracy is NOT established."
 }

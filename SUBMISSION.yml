@@ -1,11 +1,9 @@
-project_number: 3
-project_name: "Voice of Customer Analyzer"
+project_name: "Voice of Customer"
 academy: "SDAIA Academy"
 course_url: "https://sdaiaacademy.github.io/applied-nlp/"
 repository_url: "https://github.com/w778756-dotcom/Voice-of-Customer-NLP-wadeen-al-adwani"
 student: "Wadeen Khalid Al adwani"
 instructor: "مضر محمد الفضلي"
-team_status: "Individual submission permitted by instructor, confirmed by student"
 data_type: "Original authored synthetic educational examples, not actual customer reviews"
 fine_tuning_path: "Written evidence-based justification; see DECISIONS.md"
 demo_command: "uv run --frozen python app.py"

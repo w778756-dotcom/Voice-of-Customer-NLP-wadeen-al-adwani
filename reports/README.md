@@ -11,6 +11,7 @@
 - `confusion_matrices.png`: actual counts, row=true and column=prediction.
 - `demo_smoke.json`: actual Gradio text/CSV/error-path request results.
 - `notebook_validation.json`: executed-cell counts with no errors.
+- `test_validation.json`: actual pytest counts, including CSV regression checks.
 - `presentation.html`: standalone 8-slide presentation; keys/buttons navigate, browser print exports it.
 
 Metrics measure authored synthetic examples, not real customers. Reproduce using the documented scripts. Timings change between runs. Human-readable root reports are generated from these artifacts with `scripts/build_docs.py`.

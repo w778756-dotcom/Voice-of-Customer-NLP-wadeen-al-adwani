@@ -1,10 +1,8 @@
 {
-  "project_number": 3,
-  "project": "Voice of Customer Analyzer",
+  "project": "Voice of Customer",
   "student": "Wadeen Khalid Al adwani",
   "instructor": "مضر محمد الفضلي",
   "academy": "SDAIA Academy",
-  "team": "individual, student-confirmed instructor permission",
   "dataset": {
     "source": "authored synthetic v1",
     "total": 198,

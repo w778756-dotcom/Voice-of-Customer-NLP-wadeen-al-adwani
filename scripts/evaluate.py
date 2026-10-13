@@ -14,6 +14,7 @@ os.environ.setdefault("MPLCONFIGDIR", "/tmp/voice_of_customer-matplotlib")
 os.environ.setdefault("XDG_CACHE_HOME", "/workspace/.cache")
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
 import matplotlib
+
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 import numpy as np

@@ -4,10 +4,10 @@ Actual local measurements from `reports/benchmark.json`; Python 3.12.14, Linux-6
 
 | System | Test N | Accuracy | Macro-F1 | 95% bootstrap CI | p95 single-comment ms |
 | --- | --- | --- | --- | --- | --- |
-| baseline | 66 | 0.530 | 0.533 | [0.402, 0.656] | 3.51 |
-| improved | 66 | 0.576 | 0.575 | [0.440, 0.705] | 2.81 |
+| baseline | 66 | 0.530 | 0.533 | [0.402, 0.656] | 8.27 |
+| improved | 66 | 0.576 | 0.575 | [0.440, 0.705] | 4.41 |
 
-Classification p95 excludes server transport, CSV parsing, embeddings and clustering. The separate 15-comment full pipeline took 21.10 ms; that single batch duration is **not p95**. Cosine silhouette was 0.232; no gold topic accuracy measured.
+Classification p95 excludes server transport, CSV parsing, embeddings and clustering. The separate 15-comment full pipeline took 31.11 ms; that single batch duration is **not p95**. Cosine silhouette was 0.232; no gold topic accuracy measured.
 
 Paid API cost per 1,000 comments: **USD 0** (no API calls). Compute, hosting, electricity and labor are **not included**. Training durations and validation curve are in `reports/learning_curve.csv`.
 

@@ -9,10 +9,13 @@ os.environ.setdefault('MPLCONFIGDIR', '/tmp/voice_of_customer-matplotlib')
 
 import gradio as gr
 import pandas as pd
+
 from voice_of_customer.pipeline import load_analyzer
 
 
 def analyze_text(comments):
+    if not isinstance(comments, str):
+        raise gr.Error('أدخلي تعليقات نصية، تعليقًا واحدًا في كل سطر.')
     try:
         result = load_analyzer().analyze([line.strip() for line in comments.splitlines() if line.strip()])
     except (ValueError, RuntimeError) as exc:
@@ -26,17 +29,24 @@ def analyze_text(comments):
 def analyze_csv(file):
     if not file:
         raise gr.Error('اختاري ملف CSV يحتوي على عمود text.')
-    if Path(file).stat().st_size > 5_000_000:
-        raise gr.Error('الحد الأقصى لحجم الملف 5 MB.')
-    frame = pd.read_csv(file, nrows=1001)
-    if 'text' not in frame.columns or not 1 <= len(frame) <= 1000 or frame.text.isna().any():
+    try:
+        if Path(file).stat().st_size > 5_000_000:
+            raise gr.Error('الحد الأقصى لحجم الملف 5 MB.')
+        # Preserve empty rows instead of silently dropping customer comments.
+        # Literal strings such as "NA" are feedback, not missing-value markers.
+        frame = pd.read_csv(file, nrows=1001, dtype={'text': str},
+                            keep_default_na=False, skip_blank_lines=False)
+    except (OSError, UnicodeDecodeError, pd.errors.EmptyDataError, pd.errors.ParserError) as exc:
+        raise gr.Error('تعذر قراءة الملف. استخدمي CSV صالحًا بترميز UTF-8 وعمود text.') from exc
+    if ('text' not in frame.columns or not 1 <= len(frame) <= 1000
+            or frame.text.isna().any() or frame.text.str.strip().eq('').any()):
         raise gr.Error('يلزم عمود text و1–1000 تعليق دون قيم فارغة.')
-    return analyze_text('\n'.join(frame.text.astype(str).str.replace('\n', ' ', regex=False)))
+    return analyze_text('\n'.join(frame.text.str.replace(r'[\r\n]+', ' ', regex=True)))
 
 
 def build_demo():
     with gr.Blocks(title='Voice of Customer | صوت العميل', theme=gr.themes.Soft()) as demo:
-        gr.Markdown('# Voice of Customer — تحليل صوت العميل\n**Wadeen Khalid Al adwani** · أكاديمية سدايا · المشروع ٣\n\n'
+        gr.Markdown('# Voice of Customer — تحليل صوت العميل\n**Wadeen Khalid Al adwani** · أكاديمية سدايا · مشروع Voice of Customer\n\n'
                     'المدرب: **مضر محمد الفضلي**\n\n'
                     'نموذج تعليمي على بيانات مؤلفة: النتائج ليست ضمانًا للأداء على عملاء حقيقيين. '
                     'كل التحليل محلي؛ إخفاء البريد والهاتف آلي وجزئي، لذا لا ترفعي بيانات شخصية.')

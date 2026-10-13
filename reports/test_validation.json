@@ -1,0 +1,8 @@
+{
+  "tests": 22,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 0,
+  "status": "passed",
+  "command": "pytest -q --junitxml=artifacts/pytest.xml"
+}

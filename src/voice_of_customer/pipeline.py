@@ -5,7 +5,6 @@ transformer embeddings. No external API is used. Serialized models are local,
 trusted build outputs only, never arbitrary uploaded pickle files.
 """
 
-import json
 import pickle
 from collections import Counter
 from pathlib import Path
@@ -81,7 +80,7 @@ class Analyzer:
         ]
 
     def analyze(self, texts):
-        if not texts or len(texts) > 1000:
+        if not isinstance(texts, (list, tuple)) or not texts or len(texts) > 1000:
             raise ValueError("Provide 1–1000 nonempty comments.")
         if any(not isinstance(t, str) or not t.strip() or len(t) > 4000 for t in texts):
             raise ValueError("Each comment must be nonempty text, at most 4000 characters.")

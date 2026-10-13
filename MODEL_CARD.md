@@ -4,7 +4,7 @@
 
 ## Intended use
 
-Project 3 capstone: demonstrate sentiment classification, embeddings-based issue clustering, evidence-grounded insight summaries, and reproducible evaluation of Arabic feedback. For learning and assisted review, **not autonomous customer decisions**.
+Voice of Customer capstone: demonstrate sentiment classification, embeddings-based issue clustering, evidence-grounded insight summaries, and reproducible evaluation of Arabic feedback. For learning and assisted review, **not autonomous customer decisions**.
 
 ## Models and components
 

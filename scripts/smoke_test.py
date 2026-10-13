@@ -10,6 +10,7 @@ from pathlib import Path
 
 import httpx
 from gradio_client import Client, handle_file
+from gradio_client.exceptions import AppError
 
 ROOT = Path(__file__).resolve().parents[1]
 
@@ -47,11 +48,20 @@ def main():
             invalid_rejected = False
             try:
                 client.predict('', api_name='/analyze')
-            except Exception as exc:
+            except AppError as exc:
                 invalid_rejected = '1–1000' in str(exc)
             assert invalid_rejected, 'Empty input did not produce expected validation error.'
+            invalid_csv = ROOT / 'artifacts/invalid_feedback.csv'
+            invalid_csv.write_text('text\nالمنتج ممتاز\n" "\n', encoding='utf-8')
+            invalid_csv_rejected = False
+            try:
+                client.predict(handle_file(str(invalid_csv)), api_name='/analyze_csv')
+            except AppError as exc:
+                invalid_csv_rejected = 'دون قيم فارغة' in str(exc)
+            assert invalid_csv_rejected, 'Invalid CSV rows were silently dropped.'
             record = {'status': 'passed', 'http_config': 200, 'text_api_comments': 3,
                       'csv_api_comments': 15, 'empty_input_rejected': True,
+                      'invalid_csv_rejected': True,
                       'share_tunnel': False, 'server_stopped_by_test': True}
             args.report_path.parent.mkdir(parents=True, exist_ok=True)
             args.report_path.write_text(json.dumps(record, indent=2))
