@@ -116,6 +116,12 @@ Reproduce via `bash scripts/run_all.sh`. Environment setup download time is not 
 
 **تنبيه عن النتائج:** البيانات تعليمية مؤلفة وليست تعليقات عملاء حقيقية. النظام ليس جاهزًا لقرارات تشغيلية مستقلة. تفاصيل استخدام المساعدة البرمجية موضحة في [STUDENT_PROFILE.md](STUDENT_PROFILE.md).
 
+## تقرير مختصر عن البرنامج والمشروع
+
+[تحميل البوربوينت القابل للتعديل](reports/training_report/Voice_of_Customer_Training_Report.pptx) · [نسخة PDF للقراءة](reports/training_report/Voice_of_Customer_Training_Report.pdf)
+
+٨ شرائح بلغة مبسطة لغير المتخصصين، تشمل البرنامج التدريبي وفكرة المشروع والنتائج وحدودها، مع شعار أكاديمية سدايا.
+
 ## تشغيل المشروع
 
 ```bash

@@ -15,3 +15,5 @@
 - `presentation.html`: standalone 8-slide presentation; keys/buttons navigate, browser print exports it.
 
 Metrics measure authored synthetic examples, not real customers. Reproduce using the documented scripts. Timings change between runs. Human-readable root reports are generated from these artifacts with `scripts/build_docs.py`.
+
+- `training_report/`: editable Arabic PowerPoint and rendered PDF for a nontechnical training/project report.
